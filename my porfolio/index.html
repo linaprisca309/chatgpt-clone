@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <meta name="description" content="Lina Prisca — student and aspiring software engineer from Cameroon. Web developer focused on UI/UX and front-end projects.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="name">Lina Prisca</span>
+                <span class="tag">Web & UI Designer</span>
+            </div>
+            <button id="menu-btn" aria-label="Toggle menu">☰</button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+         <div class="hero-content container">
+             <h1>Hi — I’m <strong>Lina Prisca</strong></h1>
+             <p class="lead">Aspiring Software Engineer focused on building accessible, beautiful web interfaces.</p>
+             <div class="hero-ctas">
+                 <button onclick="showSection('about')">About Me</button>
+                 <a class="btn-outline" href="#contact" onclick="showSection('contact')">Contact</a>
+             </div>
+             <p class="small">Based in Cameroon · Available for internships & freelance</p>
+         </div>
+        </section>
+        <section id="about" style="display: none;">
+            <div class="container about-wrap">
+                <h2>About Me</h2>
+                <div class="about-grid">
+                    <div class="about-img">
+                        <img src="images - Copy/ub.png.jpg" alt="Lina Prisca portrait">
+                    </div>
+                    <div class="about-text">
+                        <p><strong>Hello — I’m Lina.</strong> I’m studying Software Engineering at Prestige Higher Institute of Professional Training, Bamenda. I enjoy creating clean interfaces and learning new web technologies.</p>
+                        <h3>Skills</h3>
+                        <div class="skills">
+                            <span class="skill">HTML</span>
+                            <span class="skill">CSS</span>
+                            <span class="skill">JavaScript</span>
+                            <span class="skill">UI/UX</span>
+                        </div>
+                        <h3>Interests</h3>
+                        <p>Front-end development, responsive design, accessibility, and product design.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" style="display: none;">
+            <h1>My Projects</h1>
+            <div class="grid">
+                <div class="card">
+                    <img src="images - Copy/scholl.jpg">
+                    <h3>Project 1</h3>
+                    <p>UI/UT Design</p>
+                    <p>Am a student passionate about  UI/UT Design so i wish to learn more </p>
+                </div>
+                <div class="card">
+                    <img src="images - Copy/work.jpg">
+                    <h3>Project 2</h3>
+                    <p>Web Development</p>
+                    <p>Am a student inspirring in learning web development and web design.<br> So i will learn more</p>
+                </div>
+                <div class="card">
+                    <img src="images - Copy/boo.jpg">
+                    <h3>Project 3</h3>
+                    <p>App Develop</p>
+                    <p>Am a student aspiring is learning web development <br>An i wish to provid the  best.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" style="display: none;">
+            <div class="container contact-wrap">
+                <h2>Contact</h2>
+                <div class="contact-grid">
+                    <div class="contact-form-wrap">
+                        <form id="contact-form">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Your name" required>
+
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
+
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                    <aside class="contact-info">
+                        <p><strong>Email</strong><br> lina@example.com</p>
+                        <p><strong>Location</strong><br> Bamenda, Cameroon</p>
+                        <p><strong>Availability</strong><br> Open to internships & freelance</p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> Copyright by Lina  Prisca  from Cameroon </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige Higher Institute of Professional Training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h2>Prestige Institute</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#courses" class="nav-link">Courses</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#news" class="nav-link">News</a></li>
+                    <li><a href="#admissions" class="nav-link">Admissions</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="admin.html" class="nav-link admin-nav">🔐 Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <h1>Welcome to Prestige Institute</h1>
+                <p class="tagline">Professional Training for Excellence & Success</p>
+                <button class="btn btn-primary" onclick="showSection('about')">Discover More</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>We are committed to providing top-notch education with state-of-the-art facilities and experienced faculty members.</p>
+                <p>Our mission is to nurture well-rounded individuals prepared for academic excellence and real-world challenges.</p>
+                <div class="features">
+                    <div class="feature-box">
+                        <h3>Expert Faculty</h3>
+                        <p>Highly qualified and experienced educators with advanced degrees</p>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Modern Facilities</h3>
+                        <p>State-of-the-art classrooms, labs, and technology infrastructure</p>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Student Support</h3>
+                        <p>Comprehensive mentoring, counseling, and career guidance</p>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Global Standards</h3>
+                        <p>Curriculum aligned with international educational benchmarks</p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h2>5000+</h2>
+                        <p>Students</p>
+                    </div>
+                    <div class="stat">
+                        <h2>150+</h2>
+                        <p>Faculty Members</p>
+                    </div>
+                    <div class="stat">
+                        <h2>25+</h2>
+                        <p>Programs</p>
+                    </div>
+                    <div class="stat">
+                        <h2>95%</h2>
+                        <p>Placement Rate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <!-- Courses Section -->
+        <section id="courses" class="section">
+            <div class="container">
+                <h1>Our Courses</h1>
+                <p class="section-subtitle">Choose from our diverse range of programs designed for your success</p>
+                <div class="courses-grid" id="courses-grid">
+                    <!-- Courses will be loaded from backend -->
+                    <div class="course-card">
+                        <h3>School of Engineering</h3>
+                        <p>Develop technical skills in various engineering disciplines</p>
+                        <ul class="course-list">
+                            <li>Civil Engineering</li>
+                            <li>Mechanical Engineering</li>
+                            <li>Electrical Engineering</li>
+                            <li>Computer Science</li>
+                        </ul>
+                        <button class="btn btn-secondary" onclick="showSection('admissions')">Enroll Now</button>
+                    </div>
+                    <div class="course-card">
+                        <h3>School of Accounting</h3>
+                        <p>Master financial management and accounting principles</p>
+                        <ul class="course-list">
+                            <li>Financial Accounting</li>
+                            <li>Management Accounting</li>
+                            <li>Auditing</li>
+                            <li>Tax Planning</li>
+                        </ul>
+                        <button class="btn btn-secondary" onclick="showSection('admissions')">Enroll Now</button>
+                    </div>
+                    <div class="course-card">
+                        <h3>School of Business</h3>
+                        <p>Build leadership and entrepreneurial expertise</p>
+                        <ul class="course-list">
+                            <li>Business Administration</li>
+                            <li>Marketing</li>
+                            <li>Finance</li>
+                            <li>Entrepreneurship</li>
+                        </ul>
+                        <button class="btn btn-secondary" onclick="showSection('admissions')">Enroll Now</button>
+                    </div>
+                    <div class="course-card">
+                        <h3>School of Health Sciences</h3>
+                        <p>Advance your career in healthcare and medical fields</p>
+                        <ul class="course-list">
+                            <li>Nursing</li>
+                            <li>Public Health</li>
+                            <li>Pharmacy</li>
+                            <li>Medical Technology</li>
+                        </ul>
+                        <button class="btn btn-secondary" onclick="showSection('admissions')">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h1>Student Testimonials</h1>
+                <p class="section-subtitle">Hear from our successful graduates and current students</p>
+                <div class="testimonials-grid" id="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Premier Academy provided me with the best education and support. I'm now working at a leading tech company!"</p>
+                        <h4>Sarah Johnson</h4>
+                        <p class="testimonial-role">Computer Science Graduate, Class of 2023</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"The faculty members are dedicated and the curriculum is comprehensive. I highly recommend this institution."</p>
+                        <h4>Ahmed Hassan</h4>
+                        <p class="testimonial-role">Business Administration Student</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Amazing experience with world-class facilities and experienced professors. Best decision of my life!"</p>
+                        <h4>Maria Garcia</h4>
+                        <p class="testimonial-role">Nursing Graduate, Class of 2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News & Events Section -->
+        <section id="news" class="section">
+            <div class="container">
+                <h1>News & Events</h1>
+                <p class="section-subtitle">Stay updated with latest news and upcoming events</p>
+                <div class="news-grid" id="news-grid">
+                    <div class="news-card">
+                        <div class="news-date">Feb 15, 2026</div>
+                        <h3>Annual Innovation Summit 2026</h3>
+                        <p>Join us for our annual innovation summit where students showcase their research and projects.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-date">Feb 10, 2026</div>
+                        <h3>New Scholarship Programs Announced</h3>
+                        <p>Exciting new scholarship opportunities for deserving students. Apply now for merit-based awards.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-date">Feb 5, 2026</div>
+                        <h3>Campus Expansion Project Complete</h3>
+                        <p>We're excited to announce the completion of our new state-of-the-art research center.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admissions Section -->
+        <section id="admissions" class="section">
+            <div class="container">
+                <h1>Admissions</h1>
+                <p class="intro-text">Apply now for the upcoming academic session and start your journey with us.</p>
+                <button class="btn btn-primary" onclick="toggleForm()">Apply Online</button>
+                
+                <div id="form-container" style="display: none;" class="form-wrapper">
+                    <form id="admission-form" class="admission-form">
+                        <h2>Application Form</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" placeholder="Enter your first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="age">Age *</label>
+                                <input type="number" id="age" placeholder="Enter your age" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">Date of Birth *</label>
+                                <input type="date" id="dob" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="course">Preferred School *</label>
+                            <select id="course" required>
+                                <option value="">Select a school</option>
+                                <option value="engineering">School of Engineering</option>
+                                <option value="accounting">School of Accounting</option>
+                                <option value="business">School of Business</option>
+                                <option value="health">School of Health Sciences</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="qualification">Previous Qualification *</label>
+                            <select id="qualification" required>
+                                <option value="">Select qualification</option>
+                                <option value="high-school">High School Diploma</option>
+                                <option value="bachelor">Bachelor's Degree</option>
+                                <option value="diploma">Diploma</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" placeholder="Tell us about yourself..." rows="4"></textarea>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="terms" required>
+                            <label for="terms">I agree to the terms and conditions *</label>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Submit Application</button>
+                            <button type="button" class="btn btn-secondary" onclick="toggleForm()">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="submissions-list" class="submissions-section" style="display: none;">
+                    <h2>Recent Applications</h2>
+                    <div id="submissions-container" class="submissions-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p class="section-subtitle">Get in touch with our admissions team</p>
+                
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <p><a href="mailto:info@prestigeinstitute.edu">info@prestigeinstitute.edu</a></p>
+                            <p><a href="mailto:admissions@prestigeinstitute.edu">admissions@prestigeinstitute.edu</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📱 Phone</h3>
+                            <p><a href="tel:+1-800-PRESTIGE">+1-800-PRESTIGE (7737844)</a></p>
+                            <p><a href="tel:+1-555-PRESTIGE">+1-555-PRESTIGE</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📍 Address</h3>
+                            <p>Professional Training Center<br>Career Development District<br>United States</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>🕐 Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 2:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <h2>Send us a Message</h2>
+                        <div class="form-group">
+                            <label for="contact-name">Your Name *</label>
+    <!-- Footer -->
+    <!-- Footer -->
+                            <input type="text" id="contact-name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Your Email *</label>
+                            <input type="email" id="contact-email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" placeholder="Message subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" placeholder="Your message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+
+                    <form class="contact-form" id="contact-form">
+                        <h2>Send us a Message</h2>
+                        <div class="form-group">
+                            <label for="contact-name">Your Name *</label>
+                            <input type="text" id="contact-name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Your Email *</label>
+                            <input type="email" id="contact-email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" placeholder="Message subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" placeholder="Your message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+
+                    <form class="contact-form" id="contact-form">
+                        <h2>Send us a Message</h2>
+                        <div class="form-group">
+                            <label for="contact-name">Your Name *</label>
+                            <input type="text" id="contact-name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Your Email *</label>
+                            <input type="email" id="contact-email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" placeholder="Message subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" placeholder="Your message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+
+                    <form class="contact-form" id="contact-form">
+                        <h2>Send us a Message</h2>
+                        <div class="form-group">
+                            <label for="contact-name">Your Name *</label>
+                            <input type="text" id="contact-name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Your Email *</label>
+                            <input type="email" id="contact-email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" placeholder="Message subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" placeholder="Your message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+
+                    <form class="contact-form" id="contact-form">
+                        <h2>Send us a Message</h2>
+                        <div class="form-group">
+                            <label for="contact-name">Your Name *</label>
+                            <input type="text" id="contact-name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Your Email *</label>
+                            <input type="email" id="contact-email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" placeholder="Message subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" placeholder="Your message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+
+                    <form class="contact-form" id="contact-form">
+                        <h2>Send us a Message</h2>
+                        <div class="form-group">
+                            <label for="contact-name">Your Name *</label>
+                            <input type="text" id="contact-name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Your Email *</label>
+                            <input type="email" id="contact-email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" placeholder="Message subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" placeholder="Your message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+
+                    <form class="contact-form" id="contact-form">
+                        <h2>Send us a Message</h2>
+                        <div class="form-group">
+                            <label for="contact-name">Your Name *</label>
+                            <input type="text" id="contact-name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Your Email *</label>
+                            <input type="email" id="contact-email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" placeholder="Message subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" placeholder="Your message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Prestige Institute</h3>
+                    <p>Professional training and development for career advancement.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Twitter">𝕏</a>
+                        <a href="#" title="LinkedIn">in</a>
+                        <a href="#" title="Instagram">📷</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Prestige Higher Institute of Professional Training. All rights reserved. | Professional Excellence</p>
+                <p><a href="admin.html" class="admin-link">🔐 Admin Dashboard</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
