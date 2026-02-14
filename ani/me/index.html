@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatGPT clone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sidebar">
+  <div class="logo">ChatGPT</div>
+  <div class="new-chat">+ New Chat</div>
+
+  <div class="history">
+    <div>Website Project</div>
+    <div>Internship Report</div>
+    <div>JavaScript Error</div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="topbar">ChatGPT Clone</div>
+
+  <div class="chat-container" id="chat">
+    <div class="message bot">Hello 👋 How can I help you today?</div>
+  </div>
+
+  <!-- Floating Send Bar -->
+  <div class="send-bar">
+    <div class="send-box">
+      <input type="text" id="input" placeholder="Message ChatGPT...">
+      <button class="send-btn" onclick="sendMessage()">send</button>
+    </div>
+  </div>
+  <script src="script.js" ></script> 
+</body>
+</html>

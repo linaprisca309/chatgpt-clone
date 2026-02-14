@@ -1,0 +1,162 @@
+ *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body{
+  display:flex;
+  height:100vh;
+  background:#0f172a;
+  color:white;
+  overflow:hidden;
+}
+
+/* ===== Sidebar ===== */
+.sidebar{
+  width:260px;
+  background:#111827;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  border-right:1px solid #1f2937;
+}
+
+.logo{
+  font-size:20px;
+  font-weight:bold;
+  margin-bottom:25px;
+}
+
+.new-chat{
+  background:#1f2937;
+  padding:12px;
+  border-radius:8px;
+  text-align:center;
+  cursor:pointer;
+  transition:0.3s;
+  margin-bottom:20px;
+}
+
+.new-chat:hover{
+  background:#374151;
+}
+
+.history{
+  flex:1;
+  overflow-y:auto;
+}
+
+.history div{
+  padding:10px;
+  border-radius:6px;
+  margin-bottom:8px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.history div:hover{
+  background:#1f2937;
+}
+
+/* ===== Main Section ===== */
+.main{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+}
+
+.topbar{
+  padding:18px;
+  border-bottom:1px solid #1f2937;
+  font-weight:600;
+  font-size:18px;
+}
+
+.chat-container{
+  flex:1;
+  padding:20px;
+  overflow-y:auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-bottom:80px; /* leave space for send bar */
+}
+
+.message{
+  max-width:75%;
+  padding:14px 18px;
+  border-radius:12px;
+  animation:fadeIn 0.3s ease-in-out;
+}
+
+.user{
+  align-self:flex-end;
+  background:#2563eb;
+}
+
+.bot{
+  align-self:flex-start;
+  background:#1f2937;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(5px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* ===== Floating Input Bar ===== */
+.send-bar{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background:#111827;
+  padding:15px 20px;
+  border-top:1px solid #1f2937;
+  display:flex;
+  justify-content:center;
+}
+
+.send-box{
+  display:flex;
+  width:100%;
+  max-width:900px;
+  background:#1f2937;
+  border-radius:999px;
+  padding:8px 15px;
+  align-items:center;
+}
+
+.send-box input{
+  flex:1;
+  background:none;
+  border:none;
+  outline:none;
+  color:white;
+  font-size:16px;
+  padding:10px;
+  border-radius:999px;
+}
+
+.send-btn{
+  background:#2563eb;
+  border:none;
+  padding:10px 20px;
+  border-radius:999px;
+  cursor:pointer;
+  margin-left:10px;
+  transition:0.3s;
+  color:white;
+}
+
+.send-btn:hover{
+  background:#1d4ed8;
+}
+
+@media(max-width:600px){
+  .sidebar{
+    display:none;
+  }
+}    

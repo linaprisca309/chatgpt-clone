@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ChatGPT Clone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <button class="new-chat-btn" title="Start a new conversation">+ New Chat</button>
+      </div>
+      <nav class="chat-list" id="chat-list">
+        <div class="chat-item selected" data-id="default">ChatGPT</div>
+      </nav>
+      <div class="sidebar-footer">
+        <button class="settings-btn" title="Settings">⚙️ Settings</button>
+        <button class="help-btn" title="Help">❓ Help</button>
+      </div>
+    </aside>
+    <main class="main-content">
+      <header class="header">
+        <div class="header-left">
+          <button class="sidebar-toggle-btn" title="Toggle sidebar">☰</button>
+          <h1 class="header-title">ChatGPT</h1>
+        </div>
+        <div class="account-section">
+          <label class="switch" title="Toggle dark/light mode">
+            <input type="checkbox" id="toggle">
+            <span class="slider"></span>
+          </label>
+          <button class="account-btn" title="Account">👤</button>
+        </div>
+      </header>
+      <section class="chat-container">
+        <div class="chat-messages" id="chat-messages">
+          <div class="welcome-section">
+            <h2 class="welcome-title">What can I help with?</h2>
+            <p class="welcome-subtitle">Ask me anything or choose a quick action below</p>
+            <div class="options">
+              <button class="option-btn" onclick="suggestPrompt(this)">
+                <span class="option-icon">💡</span>
+                <span class="option-text">Brainstorm ideas</span>
+              </button>
+              <button class="option-btn" onclick="suggestPrompt(this)">
+                <span class="option-icon">🔍</span>
+                <span class="option-text">Find information</span>
+              </button>
+              <button class="option-btn" onclick="suggestPrompt(this)">
+                <span class="option-icon">✍️</span>
+                <span class="option-text">Write something</span>
+              </button>
+              <button class="option-btn" onclick="suggestPrompt(this)">
+                <span class="option-icon">🐛</span>
+                <span class="option-text">Debug code</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <form class="input-section" onsubmit="handleSubmit(event)">
+        <div class="input-wrapper">
+          <input 
+            type="text" 
+            placeholder="Message ChatGPT..." 
+            id="chat-input" 
+            autocomplete="off"
+            maxlength="2000"
+          />
+          <button type="submit" class="send-btn" aria-label="Send message" disabled>➤</button>
+        </div>
+        <p class="input-hint">ChatGPT can make mistakes. Consider checking important information.</p>
+      </form>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
